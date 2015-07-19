@@ -9,5 +9,8 @@
     "express": "^4.13.1",
     "method-override": "^2.3.4",
     "mongoose": "^4.0.7"
+  },
+  "engines" : {
+      "node" : "*"
   }
 }
