@@ -1,0 +1,15 @@
+<div class="container">
+    <div class="jumbotron text-center">
+        <h1> Your todo list has <span>{{ todos.length }}</span> item(s).</h1>
+    </div>
+    
+    <div id="todo-list" class="row">
+        <div class="col-sm-4 col-sm-offset-4">
+            <div class="checkbox" ng-repeat="todo in todos">
+                <label>
+                    <input type="checkbox" ng-click="deleteTodo(todo._id)"> {{ todo.text }}
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
