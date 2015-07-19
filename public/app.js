@@ -12,7 +12,7 @@ todoapp.config(function($routeProvider) {
       });
 });
 
-todoapp.controller('mainController',function($scope) {
+todoapp.controller('mainController',function($scope, $http) {
     $scope.formData ={};
     
     $http.get('/api/todos')

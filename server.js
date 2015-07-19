@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override'); // simulate DELETE and PUT (express4)
 
-mongoose.connect('PUT URL OF MONGO DB HERE');
+mongoose.connect('mongodb://kartikey:lola123@apollo.modulusmongo.net:27017/yxo3peBy');
 
 app.use(express.static(__dirname + '/public'));                
 app.use(bodyParser.urlencoded({'extended':'true'}));            
@@ -59,4 +59,6 @@ app.delete('/api/todos/:todo_id', function(req, res) {
 });
 
 
-app.listen(9000, "Listening at port 9000.");
+app.listen(9000, function() {
+    console.log("Listening at port 9000");
+});
