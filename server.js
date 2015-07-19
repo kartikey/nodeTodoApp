@@ -1,5 +1,6 @@
 var express  = require('express');
 var app      = express();
+var port = process.env.PORT || 9000;
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 var methodOverride = require('method-override'); // simulate DELETE and PUT (express4)
@@ -59,6 +60,6 @@ app.delete('/api/todos/:todo_id', function(req, res) {
 });
 
 
-app.listen(9000, function() {
-    console.log("Listening at port 9000");
+app.listen(port, function() {
+    console.log("Listening at port: " +port);
 });
