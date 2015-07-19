@@ -12,4 +12,15 @@
             </div>
         </div>
     </div>
+    
+    <div id="todo-form" class="row">
+        <div class="col-sm-8 col-sm-offset-2 text-center">
+            <form>
+                <div class="form-group">
+                    <inpit type="text" class="form-control input-lg text-center" placeholder="What todo..." ng-model="formData.text"></inpit>
+                </div>
+                <button type="submit" class="btn btn-primary btn-lg" ng-click="createTodo()">Add</button>
+            </form>
+        </div>
+    </div>    
 </div>
